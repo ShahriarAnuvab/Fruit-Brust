@@ -25,7 +25,9 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'redis-bg' : '#F85559',
+                       
+                        
                     }
                 }
             }
@@ -33,7 +35,7 @@
     </script>
 </head>
 
-<body>
+<body class=" bg-[#FFF]">
     <header class="container mx-auto">
         <nav class="">
             <div class="navbar rounded-full py-4 px-10 Lato bg-[#F85559] mt-10">
@@ -77,17 +79,18 @@
         </nav>
 
         <!-- banner 1 -->
-        <div class="mt-14 ">
+        <div class="mt-14 hidden md:grid">
             <div class="hero min-h-[600px] rounded-lg bg-gradient-to-r from-[#121212]  to-[#121212]  " style="background-image: url(./images/banner4.png);">
                 <div class="hero-overlay bg-opacity-40"></div>
+                
+                
                 <div class="hero-content text-center text-neutral-300  Lato">
-                    <div class="max-w-[660px] ">
-                        <div class="absolute top-[300px] left-[690px] space-y-3 ">
+                    <div class="max-w-[660px]">
+                        <div class="absolute  md:top-[300px] lg:left-[690px]  md:left-[200px] md:space-y-3 ">
                             <h1 class="text-5xl font-black text-[#FFF]">Exotic tastes at your <br>doorstep</h1>
-                            <p class="Lato text-lg font-medium text-[#FFF]">We supply highly quality organic products
-                            </p>
-                            <button class="btn btn-primary">Get Started</button>
-                            <div class="absolute flex justify-between transform -translate-y-1/2 left-[-470px] right-[-550px] top-1/2">
+                            <p class="Lato text-lg font-medium text-[#FFF]">We supply highly quality organic products</p>
+                            <button class="btn bg-[#F85559] border-none rounded-lg">Get Started</button>
+                            <div class="absolute flex justify-between transform lg:-translate-y-1/2 lg:left-[-470px] lg:right-[-550px] lg:top-1/2  md:-translate-y-[200px]  md:left-[-200px]  md:right-[-123px]">
                                 <a href="#slide4" class="btn btn-circle">❮</a> 
                                 <a href="#slide2" class="btn btn-circle">❯</a>
               
@@ -102,7 +105,55 @@
 
     </header>
 
-    <main></main>
+    <main class="container mx-auto Lato mt-20 md:mt-32">
+        <!-- Deal OF the Day -->
+        <section class="flex flex-col lg:flex-row  justify-between container mx-auto p-4 md:p-0 space-y-5 md:space-y-10 items-center">
+            <div class=" space-y-5 text-center md:text-start">
+                <h1 class="text-[#121212] text-3xl md:text-5xl font-extrabold ">Deal of the day</h1>
+                <p  class="text-[#121212] text-base font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
+                    Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+
+            <!-- Timer -->
+            <div class="flex gap-4 md:gap-6 p-5 md:p-0" >
+                <div class="text-[#121212] Lato flex  justify-center gap-4">
+                    <div class="space-y-1">
+                        <h1 class=" text-4xl md:text-5xl font-black">29</h1>
+                        <p class="font-medium text-xs md:text-base text-center">Days</p>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-lg mt-5" style="color: #121212;"></i>
+                </div>
+
+                <div class="text-[#121212] Lato flex  justify-center gap-2 md:gap-4">
+                    <div class="space-y-1">
+                        <h1 class=" text-4xl md:text-5xl font-black">15</h1>
+                        <p class="font-medium text-xs md:text-base text-center">Hours</p>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-lg mt-5" style="color: #121212;"></i>
+                </div>
+
+                <div class="text-[#121212] Lato flex  justify-center gap-4">
+                    <div class="space-y-1">
+                        <h1 class=" text-4xl md:text-5xl font-black">25</h1>
+                        <p class="font-medium text-xs md:text-base text-center">Minutes</p>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-lg mt-5" style="color: #121212;"></i>
+                </div>
+                <div class="text-[#121212] Lato flex  justify-center gap-4">
+                    <div class="space-y-1">
+                        <h1 class=" text-4xl md:text-5xl font-black">08</h1>
+                        <p class="font-medium text-xs md:text-base text-center">Minutes</p>
+                    </div>
+                    </div>
+                    
+                </div>
+
+
+
+            </div>
+        </section>
+
+    </main>
 
     <footer></footer>
 
